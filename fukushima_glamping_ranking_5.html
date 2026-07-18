@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>福島グランピング ランキング</title>
+<style>
+  :root{
+    --bg:#f4f1ea; --card:#ffffff; --ink:#2e2a24; --sub:#6f675b;
+    --line:#e5ded2; --gold:#c69a3e; --green:#5c7a52; --terra:#b5673f;
+    --pill:#f0ece2; --star:#e0a92e;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;padding:18px 14px 40px;background:var(--bg);color:var(--ink);
+    font-family:"Hiragino Sans","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+    line-height:1.6;-webkit-font-smoothing:antialiased;
+  }
+  .head{max-width:640px;margin:0 auto 20px;}
+  .head h1{font-size:1.32rem;margin:0 0 4px;letter-spacing:.02em;}
+  .head p{margin:2px 0;color:var(--sub);font-size:.82rem;}
+  .crit{
+    max-width:640px;margin:0 auto 22px;background:#fff;border:1px solid var(--line);
+    border-radius:14px;padding:12px 14px;font-size:.78rem;color:var(--sub);
+  }
+  .crit b{color:var(--green);}
+  .grid{max-width:640px;margin:0 auto;display:flex;flex-direction:column;gap:14px;}
+  .card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;
+    padding:14px 14px 16px;position:relative;box-shadow:0 1px 3px rgba(0,0,0,.04);
+  }
+  .card.top{border:1.5px solid var(--gold);box-shadow:0 3px 14px rgba(198,154,62,.18);}
+  .rank{
+    position:absolute;top:-11px;left:14px;background:var(--green);color:#fff;
+    font-weight:700;font-size:.82rem;padding:3px 11px;border-radius:20px;letter-spacing:.03em;
+  }
+  .card.top .rank{background:var(--gold);}
+  .card.dim .rank{background:#a49b8c;}
+  .name{font-size:1.05rem;font-weight:700;margin:8px 0 2px;padding-right:4px;}
+  .area{font-size:.76rem;color:var(--sub);margin-bottom:8px;}
+  .meta{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:center;margin-bottom:9px;font-size:.82rem;}
+  .star{color:var(--star);font-weight:700;}
+  .noeval{color:#a49b8c;font-weight:600;font-size:.78rem;}
+  .price{color:var(--terra);font-weight:700;}
+  .price small{color:var(--sub);font-weight:400;font-size:.72rem;}
+  .pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:10px;}
+  .pill{background:var(--pill);border-radius:20px;padding:3px 9px;font-size:.7rem;color:#5a5347;white-space:nowrap;}
+  .pill.hot{background:#f6e7d8;color:#a55a2c;}
+  .pill.spa{background:#e3ece0;color:#4e6b45;}
+  .why{font-size:.82rem;background:#faf7f0;border-left:3px solid var(--gold);
+    padding:8px 10px;border-radius:0 8px 8px 0;color:#4a453c;margin-bottom:11px;}
+  .why.warn{border-left-color:var(--terra);background:#fbf1ec;}
+  .hp{
+    display:inline-flex;align-items:center;gap:6px;text-decoration:none;
+    background:var(--green);color:#fff;font-size:.8rem;font-weight:700;
+    padding:8px 14px;border-radius:10px;
+  }
+  .card.top .hp{background:var(--gold);}
+  .card.dim .hp{background:#8f8778;}
+  .hp:hover{opacity:.9;}
+  .foot{max-width:640px;margin:22px auto 0;font-size:.72rem;color:var(--sub);text-align:center;}
+</style>
+</head>
+<body>
+  <div class="head">
+    <h1>🏕 福島グランピング おすすめランキング</h1>
+    <p>出典：休日グランピング部（福島県 全10施設）／各施設の公式HPリンク付き</p>
+    <p>対象：20〜50代の仲良し女性 7〜8名 ＋ 旦那様など家族合流の可能性あり</p>
+  </div>
+
+  <div class="crit">
+    <b>評価の重み：</b> ①大人数で一緒に泊まれるか ②貸切・プライベート感 ③温泉/サウナ等のウェルネス ④口コミ満足度 ⑤1人あたりコスパ ⑥旦那様同伴でも自然か（カップル対応）。<br>
+    ※料金は「大人2名1室・税込」最安表示。一棟貸しは総額なので人数で割ると割安になります。<br>
+    ※各カード下の「公式HP」ボタンから直接予約ページへ。
+  </div>
+
+  <div class="grid">
+
+    <!-- 1 -->
+    <div class="card top">
+      <span class="rank">👑 1位</span>
+      <div class="name">空の庭クレセントムーン</div>
+      <div class="area">福島県 二本松市 あだたら高原（一棟貸しリゾート）</div>
+      <div class="meta"><span class="noeval">口コミ準備中</span><span class="price">90,000円〜<small>/一棟（公式：宿泊最大12名）≒ 12名なら約7,500円/人</small></span></div>
+      <div class="pills">
+        <span class="pill spa">源泉掛け流し温泉(無料)</span><span class="pill">大草原ヨガ</span>
+        <span class="pill">エステ</span><span class="pill">ハンモック</span>
+        <span class="pill hot">BBQ</span><span class="pill">一棟貸切</span>
+        <span class="pill">最大12名</span>
+      </div>
+      <div class="why">今回のグループにドンピシャ。<b>公式サイトでは宿泊最大12名</b>（2F・4ベッド×2部屋＋1Fリビングに和布団4組）と判明し、旦那様が加わっても一棟に収まりやすい。大草原ヨガ＋姉妹館の源泉温泉が無料＋2万㎡貸切で気兼ねなし、ウェルネス女子会＋家族合流の両立に最適。12名で割れば約7,500円/人と割安。唯一の注意点は口コミがまだ少ない点なので、設備は公式HPで最終確認を。</div>
+      <a class="hp" href="https://www.soranoniwa.co.jp/crescentmoon/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 2 -->
+    <div class="card top">
+      <span class="rank">🥈 2位</span>
+      <div class="name">エンゼルフォレスト白河高原</div>
+      <div class="area">福島県 岩瀬郡（白河・那須白河エリア）</div>
+      <div class="meta"><span class="star">★ 4.4</span><span class="price">15,100円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">天然温泉</span><span class="pill spa">サウナ</span>
+        <span class="pill hot">BBQ</span><span class="pill hot">焚火</span>
+        <span class="pill">プール</span><span class="pill">湖水浴</span>
+        <span class="pill">ドッグラン</span><span class="pill">大人数OK</span>
+        <span class="pill">ペット可</span><span class="pill">子連れ可</span>
+      </div>
+      <div class="why">設備が県内トップクラスの万能リゾート。温泉・サウナ・プールまで揃い、人数が読めなくても・大人数でも・家族連れでも全部受け止められる。総勢が12名を超えそう、または「みんなで動き回って遊びたい」なら実質の本命。★4.4と実績の口コミも安心材料。</div>
+      <a class="hp" href="https://www.ang-sk.com/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 3 -->
+    <div class="card top">
+      <span class="rank">🥉 3位</span>
+      <div class="name">しゃくなげ平 貸別荘＆コテージ</div>
+      <div class="area">福島県 猪苗代磐梯高原（オール・リゾート・サービス）</div>
+      <div class="meta"><span class="star">★ 4.5</span><span class="price">15,680円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill">完全貸切</span><span class="pill">全25棟</span>
+        <span class="pill hot">BBQ</span><span class="pill hot">手持ち花火</span>
+        <span class="pill">大人数OK</span><span class="pill">カップル◎</span>
+      </div>
+      <div class="why">全25棟から人数に合わせて選べる完全プライベート型。「夫婦は別棟、日中はみんなでBBQ」といった柔軟な使い方ができるので、人数変動が読めない今回に強い。★4.5と満足度も高い。全棟に屋根付きBBQテラス付き。</div>
+      <a class="hp" href="https://www.cottage.co.jp/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 4 -->
+    <div class="card">
+      <span class="rank">4位</span>
+      <div class="name">ハワイアンズグランピング マウナヴィレッジ</div>
+      <div class="area">福島県 いわき市（スパリゾートハワイアンズ内）</div>
+      <div class="meta"><span class="star">★ 4.6</span><span class="price">27,500円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">温泉</span><span class="pill">プール</span>
+        <span class="pill hot">BBQ</span><span class="pill hot">焚火</span>
+        <span class="pill">大人数OK</span><span class="pill">カップル◎</span><span class="pill">子連れ可</span>
+      </div>
+      <div class="why">グランピング＋ハワイアンズ本体のプール・温泉まで遊べる欲張り型（入場券付きプランあり）。旦那様や子どもが合流しても一日中退屈しない「アクティブ」派向け。全21棟のテント＆キャビン。★4.6の高評価。単価はやや高め。</div>
+      <a class="hp" href="https://www.hawaiians.co.jp/stay/maunavillage/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 5 -->
+    <div class="card">
+      <span class="rank">5位</span>
+      <div class="name">Roots猪苗代 Lake Area</div>
+      <div class="area">福島県 耶麻郡猪苗代町（湖畔）</div>
+      <div class="meta"><span class="star">★ 5.0</span><span class="price">33,600円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">アウトドアサウナ</span><span class="pill hot">BBQ</span>
+        <span class="pill hot">焚火</span><span class="pill">湖畔絶景</span>
+        <span class="pill">カップル◎</span><span class="pill">駅徒歩15分</span>
+      </div>
+      <div class="why">口コミ★5.0の満足度No.1。サウナで温まって<b>目の前の猪苗代湖にダイブ→絶景外気浴</b>という映える体験が主役。サウナ好き＆写真映え重視ならここ。ただし大グループ収容と単価の高さは要確認で、テント複数に分かれる想定。</div>
+      <a class="hp" href="https://lakearea.roots.jp/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 6 -->
+    <div class="card">
+      <span class="rank">6位</span>
+      <div class="name">LAKE SIDE HOTEL みなとや</div>
+      <div class="area">福島県 会津・猪苗代（湖畔ホテル）</div>
+      <div class="meta"><span class="star">★ 3.8</span><span class="price">11,880円〜<small>/2名（最安）</small></span></div>
+      <div class="pills">
+        <span class="pill spa">麦飯石の湯</span><span class="pill spa">フィンランド式サウナ</span>
+        <span class="pill hot">屋上BBQテラス</span><span class="pill">大人数OK</span>
+        <span class="pill">カップル◎</span>
+      </div>
+      <div class="why">県内最安。ホテル泊なので部屋を分ければ人数調整が楽で、温泉＆サウナ付き（サウナサイト日本1位獲得）。ただしグランピングは「屋上BBQ体験＋ホテル宿泊」型でテント泊ではない点に注意。とにかく安く快適に、が優先なら◎。</div>
+      <a class="hp" href="https://h-minatoya.com/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 7 -->
+    <div class="card">
+      <span class="rank">7位</span>
+      <div class="name">猪苗代沼尻温泉 沼尻高原ロッジ</div>
+      <div class="area">福島県 猪苗代（磐梯朝日国立公園内）</div>
+      <div class="meta"><span class="star">★ 4.5</span><span class="price">15,400円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">源泉掛け流し(酸性硫黄泉)</span><span class="pill">創作和食コース</span>
+        <span class="pill">トレッキング</span><span class="pill">カップル◎</span>
+      </div>
+      <div class="why">登山家・田部井淳子さんが愛した全12室のプレミアムロッジ。美肌の源泉かけ流し＋こだわりの和食が魅力。ワイワイより<b>しっとり温泉旅</b>寄りで、部屋が分かれがち。「落ち着いて癒されたい」派のグループ向け。</div>
+      <a class="hp" href="https://www.numajiri-lodge.com/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 8 -->
+    <div class="card">
+      <span class="rank">8位</span>
+      <div class="name">日本家屋 響きの宿</div>
+      <div class="area">福島県 須賀川市（1日1組限定）</div>
+      <div class="meta"><span class="star">★ 4.0</span><span class="price">25,000円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">貸切サウナ付</span><span class="pill hot">BBQ</span>
+        <span class="pill hot">焚火</span><span class="pill">1日1組貸切</span>
+        <span class="pill">ドッグラン</span><span class="pill">ペット可</span>
+      </div>
+      <div class="why">1日1組の完全貸切で静けさは抜群、サウナ付きコテージ＆グランピングを備える。イベント会場利用も可。ペット同伴推しの色があり、大グループ収容規模は要問い合わせ。犬連れ or 静かに貸切で過ごしたいなら候補。</div>
+      <a class="hp" href="https://hibikinoyado.com/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 9 -->
+    <div class="card dim">
+      <span class="rank">9位</span>
+      <div class="name">あだたら温泉ホテル パラダイスヒルズ</div>
+      <div class="area">福島県 二本松市 岳温泉</div>
+      <div class="meta"><span class="star">★ 3.2</span><span class="price">12,880円〜<small>/2名</small></span></div>
+      <div class="pills">
+        <span class="pill spa">美肌の湯(日帰りも)</span><span class="pill spa">バレルサウナ</span>
+        <span class="pill hot">BBQ</span><span class="pill hot">焚火</span><span class="pill">ドッグラン</span>
+      </div>
+      <div class="why">2024年開業。安さと温泉ホテル併設＆スタッフ常駐の安心感は魅力だが、ドームテントは定員4名中心で紹介文もカップル寄り、口コミ★3.2と今回の中では低め。仲良しグループ向けとしては優先度が下がる。</div>
+      <a class="hp" href="https://parahill-nihonmatsu.com/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+    <!-- 10 -->
+    <div class="card dim">
+      <span class="rank">10位</span>
+      <div class="name">FOME BASE（ホームベース）</div>
+      <div class="area">福島県 福島市（摺上川沿い）</div>
+      <div class="meta"><span class="noeval">口コミ・料金 掲載少なめ</span></div>
+      <div class="pills">
+        <span class="pill hot">焚火</span><span class="pill">手ぶらOK</span>
+        <span class="pill">音楽/釣り/染物WS</span>
+      </div>
+      <div class="why">音楽イベントや釣り・タイダイ染めなど体験は面白そうだが、宿泊料金・口コミ情報が薄く比較材料が少ない（入場料＋サイト利用料＋オプションの積み上げ式）。「体験重視でとにかく変わったことがしたい」なら公式で直接確認を。</div>
+      <a class="hp" href="https://www.gurutto-fukushima.com/detail/931/" target="_blank" rel="noopener">公式HPを見る →</a>
+    </div>
+
+  </div>
+
+  <div class="foot">
+    総勢12名までに収まりそう → 1位「空の庭クレセントムーン」（一棟貸切・ヨガ・温泉無料）が本命。<br>
+    13名以上 or もっと動いて遊びたい → 2位「エンゼルフォレスト」か3位「しゃくなげ平（複数棟）」が安全。
+  </div>
+</body>
+</html>
